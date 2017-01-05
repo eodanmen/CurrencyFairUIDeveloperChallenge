@@ -1,0 +1,469 @@
+/*
+	Author: Eromosele Donald Odanmen.
+	File Type: External CSS DOcument.
+	File Name: styles.css
+	Purpose: Default Author-based Web Page Presentational Settings.
+*/
+
+
+
+/* Begin Web Fonts */
+
+@font-face {
+	font-family:PostGrotesk-Book;
+	src:url(../fonts/PostGrotesk-Book.ttf);
+}
+
+@font-face {
+	font-family:PostGrotesk-Light;
+	src:url(../fonts/PostGrotesk-Light.ttf);
+}
+
+@font-face {
+	font-family:PostGrotesk-Medium;
+	src:url(../fonts/PostGrotesk-Medium.ttf);
+}
+
+@font-face {
+	font-family:PostGrotesk-Bold;
+	src:url(../fonts/PostGrotesk-Bold.ttf);
+}
+
+/* End Web Fonts */
+
+
+
+/* Begin Author-based CSS Styles for Web Page */
+
+* body {									/* Remove Margins from the Visible Page Area to make it align properly with the Viewport (Browser Window). */
+	margin:0px;
+}
+
+
+
+div#grey_bg_area {							/* Styles for the Grey Background Area spanning the width and height of the entire screen. */
+	top:0px;
+	left:0px;
+	width:100%;
+	display:none;
+	height:150vmin;
+	position:fixed;
+	background-color:rgba(64,64,64,0.7);
+}
+
+
+
+div#bg_img_container {						/* Styles for Banner containing CurrencyFair Logo and spanning width of entire screen. */
+	width:100%; 
+	height:80px;
+	background:#32323C url("../images/cf_logo.png") no-repeat 17.3% -5px;
+	background-size:contain;
+}
+
+main {										/* Styles for MAIN section of the document containing individual sections of content. */
+	width:100%;								/* Absolute Width of the MAIN section on the user's screen. */
+}
+
+
+
+/* Styles for FIRST PANEL & SECOND PANEL */
+main div#first_panel {
+	width:57.5%;							/* Total Width is 60.5% of the user's screen. */
+	height:auto;							/* Set the Height to be automatically controlled by the browser (which is the default) */
+	float:left;
+	padding:60px 3% 0 0;					/* Padding set to 60px at the top, 3% at the right & 0 at both the bottom and left. */
+}
+
+main div#second_panel {						/* Styles for SECOND PANEL of content containing Sending Details. */
+	width:39.4%;							/* Total Width is 39.5% of the user's screen, because the border-left only adds about 0.1 to the content width of 39.4%. */
+	height:100vmin;							/* Set to 100vmin, relative to 1% of the Viewport's smaller dimension to ensure Grey Sidebar spans the entire height of the screen at all times. */		
+	float:left;
+	background-color:#FBFBFB;
+	border-left:thin solid #E0E0E0;
+}
+/* Styles for FIRST PANEL & SECOND PANEL */
+
+
+
+/* Styles for Main Navigation in FIRST PANEL */
+main div#first_panel nav ul {						
+	list-style-type:none;
+	margin:0%;
+	padding:0%;
+}
+
+main div#first_panel nav ul li {									
+	display:inline-block;
+	float:left;
+	padding:12px 48px;
+	border-bottom:thick solid #E2F2FA;
+}
+
+main div#first_panel nav ul li:first-child {
+	border-bottom-color:#6EC0E6;
+}
+
+main div nav ul li a {					
+	color:#B0BEC5;										
+	text-decoration:none;
+	font-family:PostGrotesk-Medium, sans-serif;
+}
+
+main div#first_panel nav ul li a:hover {
+	cursor:pointer;
+}
+
+main div#first_panel nav ul li:first-child a {		
+	color:#80C8E9;
+}
+
+main div#first_panel nav ul li a span:first-child {	
+	font-size:14px;
+}
+/* Styles for Main Navigation in FIRST PANEL */
+
+
+
+main div#first_panel nav, main div#first_panel section {				/* Set the Left Margin for both the Main Navigation & Section in FIRST PANEL */
+	margin-left:28%;
+}
+
+
+
+/* Styles for First Section in FIRST PANEL */
+main div#first_panel section:first-of-type {
+	margin-top:125px;
+}
+
+main div#first_panel section:first-of-type header {
+	line-height:20px;
+}
+
+main div#first_panel section:first-of-type header h1 {
+	font:bold 21.8px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:first-of-type header p {
+	color:#A9A9A9;
+	font-family:PostGrotesk-Medium, sans-serif;
+}
+
+main div#first_panel section:first-of-type div:first-of-type, main div#first_panel section:first-of-type div:last-of-type {					/* Total Width for both boxes is 96.2% of the Section Area */
+	width:86%;																					
+	padding:15px 5% 0;
+	border:1px solid;
+} 
+
+main div#first_panel section:first-of-type div:first-of-type {
+	margin-top:40px;
+	border-radius:5px 5px 0px 0px;
+	background-color:#FAFDFE;
+	border-color:#6EC0E6;
+}
+
+main div#first_panel section:first-of-type div:last-of-type {
+	margin-top:0px;
+	border-radius:0px 0px 5px 5px;
+	background-color:transparent;
+	border-color:#E6E6E6;
+}
+
+main div#first_panel section:first-of-type div:first-of-type h2, main div#first_panel section:first-of-type div:last-of-type h2 {
+	text-transform:uppercase;
+	font:16px PostGrotesk-Medium, sans-serif;
+}
+
+main div#first_panel section:first-of-type div:first-of-type h2 {
+	color:#6EC0E6;
+}
+
+main div#first_panel section:first-of-type div:last-of-type h2 {
+	color:#ABABAB;
+}
+
+main div#first_panel section:first-of-type div:first-of-type p span:first-of-type, main div#first_panel section:first-of-type div:last-of-type p span:first-of-type {
+	font:bold 25px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:first-of-type div:first-of-type p span:last-of-type, main div#first_panel section:first-of-type div:last-of-type p span:last-of-type {
+	float:right;
+	width:70px;
+	height:15px;
+	color:#616161;
+	text-align:right;
+	margin-top:-25px;
+	padding:15px 15px;
+	text-transform:uppercase;
+	border:1px solid #E0E0E0;
+	border-radius:50px 3px 3px 50px;
+	font-family:PostGrotesk-Bold, sans-serif;
+}
+
+main div#first_panel section:first-of-type div:first-of-type p span:last-of-type {
+	background:#FFFFFF url("../images/eu.png") no-repeat 10px center;
+	background-size:30px 30px;
+}
+
+main div#first_panel section:first-of-type div:last-of-type p span:last-of-type {
+	background:#FAFAFA url("../images/gb.png") no-repeat 10px center;
+	background-size:30px 30px;
+}
+
+main div#first_panel section:first-of-type button#button_next {
+	color:#FFFFFF;
+	font-size:16px;
+	margin-top:45px;
+	border-radius:3px;
+	padding:15px 18px 11px;
+	background-color:#6EC0E6;
+	border:1px solid #589AB8;
+}
+
+main div#first_panel section:first-of-type footer {
+	width:96%;											/* Set to occupy 96% of the Section's Width at all times */
+	margin-top:70px;
+	padding:20px 0px;
+	border-top:1px solid #EEEEEE;
+}
+
+main div#first_panel section:first-of-type footer address {
+	color:#BDBDBD;
+	font:14px PostGrotesk-Medium, sans-serif;
+}
+
+main div#first_panel section:first-of-type footer ul {
+	list-style-type:none;
+	margin:-20px 0px 0px 0px;
+	padding:0px;
+	float:right;
+}
+
+main div#first_panel section:first-of-type footer ul li {
+	display:inline;
+	float:left;
+}
+
+main div#first_panel section:first-of-type footer ul li:first-child {
+	margin-right:20px;
+}
+
+main div#first_panel section:first-of-type footer ul li a {
+	color:#64B5F6;
+	cursor:pointer;
+	font:14px PostGrotesk-Medium, sans-serif;
+}
+/* Styles for First Section in FIRST PANEL */
+
+
+
+/* Styles for Second Section in FIRST PANEL */
+main div#first_panel section:last-of-type {
+	top:32%;
+	left:5%;
+	z-index:1;
+	display:none;
+	position:absolute;
+	border-radius:5px;
+	background-color:#FFFFFF;
+}
+
+main div#first_panel section:last-of-type header {
+	padding:20px 90px 10px 30px;
+	background:transparent url("../images/security.png") no-repeat 21px 21px;
+	background-size:35px 47px;
+}
+
+main div#first_panel section:last-of-type h1 {
+	color:#768895;
+	text-indent:43px;
+	font:bold 22.5px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:last-of-type header p {
+	color:#A9A9A9;
+	font:13.5px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:last-of-type div:first-of-type {														
+	padding:40px 90px;
+	background-color:#FBFCFC;
+	border-top:1px solid #E0E0E0;
+	border-bottom:1px solid #E0E0E0;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:first-of-type {
+	margin-bottom:30px;
+	font:bold 16px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:first-of-type span:first-of-type, main div#first_panel section:last-of-type div:first-of-type p:first-of-type span:last-of-type {
+	color:#999999;
+	padding:10px 5px 5px;
+	background-color:#F2F1F1;
+	border:1px solid #E0E0E0;
+	border-radius:2px 0px 0px 2px;
+	border-bottom-left-radius:3px;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:first-of-type span:last-of-type {
+	background-color:#F7F7F7;
+	border-radius:0px 2px 2px 0px;
+}
+
+main div#first_panel section:last-of-type div:first-of-type input[type = "text"] {
+	width:50px;
+	height:50px;
+	margin-right:8px;
+	border-radius:5px;
+	text-align:center;
+	border:1px solid #E0E0E0;
+}
+
+main div#first_panel section:last-of-type div:first-of-type input[type = "text"]:first-of-type {
+	margin-left:-4px;
+	border-color:#64b5f6;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:last-of-type span {
+	text-align:right;
+	display:inline-block;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:last-of-type span:first-child {
+	width:128px;
+	margin-left:-8px;
+	background:transparent url("../images/refresh.png") no-repeat left center;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:last-of-type span:last-child {
+	width:173px;
+	margin-left:70px;
+	background:transparent url("../images/phone.png") no-repeat left center;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:last-of-type span a {
+	color:#80919D;
+	font:12px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:last-of-type div:first-of-type p:last-of-type span a:hover, main div#first_panel section:last-of-type div:last-of-type span a:hover {
+	cursor:pointer;
+}
+
+main div#first_panel section:last-of-type div:last-of-type {
+	padding:20px 25px 25px;
+}
+
+main div#first_panel section:last-of-type div:last-of-type button {
+	border-radius:3px;
+	padding:10px 10px 5px;
+	border:1px solid #589AB8;
+	font:bold 14px PostGrotesk-Book, sans-serif;
+}
+
+main div#first_panel section:last-of-type div:last-of-type button:first-of-type {
+	color:#FFFFFF;
+	opacity:0.4;
+	background-color:#6EC0E6;
+}
+
+main div#first_panel section:last-of-type div:last-of-type button:last-of-type {
+	color:#768895;
+	margin-left:10px;
+	background-color:#FBFDFD;
+}
+
+main div#first_panel section:last-of-type div:last-of-type span a {
+	float:right;
+	color:#6EC0E6;
+	margin-top:15px;
+	font:12px PostGrotesk-Medium, sans-serif;
+}
+/* Styles for Second Section in FIRST PANEL */
+
+
+
+/* Styles for ASIDE (Complimentary Sidebar) in SECOND PANEL */
+main div#second_panel aside {
+	width:55%;
+	height:auto;
+	border-radius:5px;
+	margin:80px 0px 0px 80px;
+	border:1px solid #E0E0E0;
+	background-color:#FFFFFF;
+}
+
+main div#second_panel aside h2, main div#second_panel aside p {				/* Total Width is 100% of ASIDE for all Heading Level 2s & Paragraphs */
+	width:86%; 		
+	margin:0px;	
+	padding:25px 7% 20px;
+}
+
+main div#second_panel aside h2 {											/* Specifically for all the H2 Elements in ASIDE */
+	color:#767676;
+	background-color:#FAFAFA;
+	border-bottom:1px solid #E0E0E0;
+	font:14px PostGrotesk-Bold, sans-serif;
+}
+
+main div#second_panel aside h2:first-of-type {								/* First H2 Element in ASIDE */
+	border-radius:5px 5px 0px 0px;
+}
+
+main div#second_panel aside h2:last-of-type {								/* Last H2 Element in ASIDE */
+	border-top:1px solid #E0E0E0;
+}
+
+main div#second_panel aside h2:last-of-type + span {
+	width:105px;
+	margin-top:-42px;
+	margin-right:6%;
+	background:transparent url("../images/help.png") no-repeat right center;
+}
+
+main div#second_panel aside h2:last-of-type + span a {
+	color:#80C8E9;
+	font:13px PostGrotesk-Medium, sans-serif;
+}
+
+main div#second_panel aside h2:last-of-type + span a:hover {
+	cursor:pointer;
+}
+
+main div#second_panel aside p {												/* Specifically for all the P Elements in ASIDE */
+	color:#B8B8B8;
+	font:14px PostGrotesk-Medium, sans-serif;
+}
+
+main div#second_panel aside p span:first-of-type {							/* First SPAN of each Paragraph */
+	font-family:PostGrotesk-Book, sans-serif;
+}
+
+main div#second_panel aside p span:last-of-type, main div#second_panel aside h2 + span {		/* Last SPAN of each Paragraph & Span with Link */
+	float:right;
+}
+
+main div#second_panel aside p:nth-of-type(2) {								/* Padding Top for Second Paragraph */
+	padding-top:25px;
+}
+
+main div#second_panel aside p:nth-of-type(1n+3) {							/* Specifically for all P Elements in ASIDE after second H2 starting from the 3rd Paragraph. */
+	padding-top:0px;
+}
+
+main div#second_panel aside p:first-of-type span:last-of-type, main div#second_panel aside p:nth-of-type(5) span:last-of-type {
+	color:#616161;
+	font:bold PostGrotesk-Book, sans-serif;
+}
+
+main div#second_panel aside p:last-child {
+	color:#FFC766;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-top:1px solid #E0E0E0;
+	font:bold 12px PostGrotesk-Book, sans-serif;
+}
+/*  Styles for ASIDE (Complimentary Sidebar) in SECOND PANEL */ 
+
+/* End Author-based CSS Styles for Web Page */

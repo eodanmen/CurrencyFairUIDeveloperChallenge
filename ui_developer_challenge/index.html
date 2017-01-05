@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Currency Fair UI Developer Challenge</title>
+		<meta charset = "UTF-8" />
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+		<meta name = "author" content = "Eromosele Donald Odanmen" />
+		<meta name = "GENERATOR" content = "Notepad++ ASCII Code Editor" />
+		<meta name = "copyright" content = "2016" />
+		<meta name = "revised" content = "19/12/2016" />
+		<link rel = "stylesheet" href = "css/styles.css" />
+		<link rel = "stylesheet" href = "css/media.css" />
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src = "scripts/javascript.js"></script>
+	</head>
+	<body>
+		<div id = "grey_bg_area"></div>				<!-- Grey Background Container, which fades in when the user clicks the NEXT button. -->
+		<div id = "bg_img_container"></div>			<!-- Container with background color and CurrencyFair Logo at the background. This acts as a simple banner. -->
+		<main>										<!-- Main content of the Document, where the main content that is directly related to the document goes into. -->
+			<div id = "first_panel">				<!-- Container representing the FIRST PANEL. -->
+				<nav>								<!-- Main Navigation Menu in FIRST PANEL. -->
+					<ul>
+						<li>
+							<a><span>Step 1</span><br /><span>Transaction info</span></a>
+						</li>
+						<li>
+							<a><span>Step 2</span><br /><span>Recipient info</span></a>
+						</li>
+						<li>
+							<a><span>Step 3</span><br /><span>Make payment</span></a>
+						</li>
+					</ul>
+				</nav>
+				<section>							<!-- Section with Transaction Info, which is directly related to the main content of the document contained within the FIRST PANEL. -->
+					<header>						<!-- Header with Introductory Text in an appropriate H1 Heading & additional Paragraph. -->
+						<h1>Let&apos;s set up your transaction!</h1>
+						<p>Specify the amount to be sent or received.</p>
+					</header>
+					<div>							<!-- Container for SEND information within Section for Transaction Info. -->
+						<h2>you send</h2>
+						<p><span>&euro;&nbsp;2,000.00</span><span>eur</span></p>
+					</div>
+					<div>							<!-- Container for RECEIVER information within Section for Transaction Info. -->
+						<h2>receiver gets</h2>
+						<p><span>&pound;&nbsp;1,717.94</span><span>gbr</span></p>
+					</div>
+					<button type = "button" id = "button_next">Next</button>		<!-- NEXT button within Section for Transaction Info to enable modal fade in. -->
+					<footer>						<!-- Footer within Section for Transaction Info carrying Contact Information & Global Navigation Menu. -->
+						<address>&copy;&nbsp;2016&nbsp;CurrencyFair</address>
+						<ul>
+							<li><a>Help &amp; Support</a></li>
+							<li><a>Legal Stuff</a></li>
+						</ul>
+					</footer>
+				</section>
+				<section>							<!-- Section with Identity Verification Info, which is also directly related to the main content of the document within the FIRST PANEL. -->
+					<header>						<!-- Header with Introductory Text in an appropriate H1 Heading & additional Paragraph. -->
+						<h1>Identity verification required</h1>
+						<p>For your security, we occassionally require you to verify your identity by<br />entering a code sent to your mobile device.</p>
+					</header>
+					<div>							<!-- First DIV Container with Paragraphs & Text Input Fields. -->
+						<p>Enter the code sent via SMS to&nbsp;<span>+353</span><span>872251177</span></p>
+						<input type = "text" />
+						<input type = "text" />
+						<input type = "text" />
+						<input type = "text" />
+						<input type = "text" />
+						<input type = "text" />
+						<p><span><a>Receive a new code</a></span><span><a>Receive code via call instead</a></span></p>
+					</div>
+					<div>							<!-- Second DIV Container with VERFIFY IDENTITY & BACK buttons & Help link. -->
+						<button type = "button" id = "verify">Verify Identity</button>
+						<button type = "button" id = "back">Back</button>
+						<span><a>I can&apos;t access this mobile device</a></span>
+					</div>
+				</section>
+			</div>
+			<div id = "second_panel">				<!-- Container for SECOND PANEL. -->
+				<aside>								<!-- Complimentary Sidebar that is somewhat related to the main content, with content that can be considered aside from it. -->
+					<h2>Sending Details</h2>
+					<p><span>You send</span><span>&euro;2,000.00</span></p>
+					<h2>Receiving Details</h2>
+					<span><a>As of right now</a></span>
+					<p><span>Rate</span><span>0.86022</span></p>
+					<p><span>Fee</span><span>&pound;2.50</span></p>
+					<p><span>Delivery date</span><span>25th November</span></p>
+					<p><span>Recipient gets</span><span>&pound;1,717.94</span></p>
+					<p>You save &pound;66.19 compared to your bank!</p>
+				</aside>
+			</div>
+		</main>
+	</body>
+</html>
